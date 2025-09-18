@@ -50,7 +50,7 @@ pipeline {
 
     post {
         success {
-            echo "Build zakończony sukcesem! ✅"
+            echo "Build zakończony sukcesem! O kurwa ale rzeż ✅"
         }
         failure {
             echo "Build się wysypał 😬"
