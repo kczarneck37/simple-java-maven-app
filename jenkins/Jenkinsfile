@@ -37,5 +37,25 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh' 
             }
         }
+
+
+
+        stage('Build Finish') {
+            steps {
+                echo 'Build success'
+            }
+        }
+
+        post {
+            success {
+            echo "Build zakończony sukcesem! ✅"
+            }
+            failure {
+            echo "Build się wysypał 😬"
+            }
+            always {
+            echo "Ten krok wykona się zawsze, niezależnie od wyniku."
+            }
+        }
     }
 }
