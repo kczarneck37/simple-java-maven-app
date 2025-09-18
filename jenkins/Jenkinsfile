@@ -53,7 +53,7 @@ pipeline {
             echo "Build zakończony sukcesem! ✅"
         }
         failure {
-            echo "Build się wysypał 😬"
+            echo "Build się wysypał łoo kurwa😬"
         }
         always {
             echo "junit 'target/surefire-reports/*.xml'"
