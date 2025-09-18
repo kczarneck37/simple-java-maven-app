@@ -56,7 +56,7 @@ pipeline {
             echo "Build się wysypał 😬"
         }
         always {
-            echo "Ten krok wykona się zawsze, niezależnie od wyniku."
+            echo "junit 'target/surefire-reports/*.xml'"
         }
     }
 }
