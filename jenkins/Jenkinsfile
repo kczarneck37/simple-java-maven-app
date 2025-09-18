@@ -45,8 +45,9 @@ pipeline {
                 echo 'Build success'
             }
         }
-
-        post {
+    }
+    post    {
+            {      
             success {
             echo "Build zakończony sukcesem! ✅"
             }
@@ -57,5 +58,5 @@ pipeline {
             echo "Ten krok wykona się zawsze, niezależnie od wyniku."
             }
         }
-    }
+    }   
 }
